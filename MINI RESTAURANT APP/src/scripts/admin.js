@@ -32,6 +32,10 @@ const append_menus = (container,data) => {
     data.forEach( (el) => {
 
         let card = document.createElement("div");
+        
+        let id = document.createElement("id");
+        id.innerText=e.index;
+
 
             let card_image = document.createElement("img");
             card_image.src = el.Image;

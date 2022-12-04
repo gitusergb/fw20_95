@@ -15,39 +15,40 @@ let cart_count=(i)=> {
      
 
 let adddata=(data)=>{
+
+ // console.log(data);
     let box = document.getElementById("items");
     box.innerHTML="";
 
-    data.forEach(({id,image,category,title,brand,price})=>{
-     
+    data.forEach((el)=>{
+  
         let d =document.createElement("div");
         d.setAttribute("class", "item");
 
             let img = document.createElement("img");
-            img.src =image;
-
-            let cat = document.createElement("p");
-            cat.innerHTML =category;
+            img.src=el.Image;
             
             let h3 = document.createElement("h3");
-            h3.innerText =title;
+            h3.innerText=el.Title;
 
-            let bran = document.createElement("p");
-            bran.innerText = `brand:- ${brand}`;
+            let des = document.createElement("p");
+            des.innerHTML =el.Description;
 
             let p2 = document.createElement("h3");
-            p2.innerText = price;
+            p2.innerText = el.Price;
             p2.setAttribute("class", "price");
 
+            let rate = document.createElement("p");
+            rate.innerText = `Ratings:- ${el.Ratings}`;
 
             let btn = document.createElement("button");
             btn.innerText = "Remove";
             btn.setAttribute("class", "remove");
             btn.onclick = () => {
-               remove(id);
+               remove(el.id);
             };
 
-        d.append(img, cat, h3, bran , p2 , btn);
+        d.append(img,h3, des, p2 ,rate , btn);
        
         box.append(d);
       

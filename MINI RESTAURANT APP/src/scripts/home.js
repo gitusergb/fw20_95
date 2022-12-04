@@ -5,14 +5,14 @@ import {navbar} from "./navbar.js";
 let nav = document.getElementById("navbar");
 nav.innerHTML=navbar();
 
-let url ="https://dbioz2ek0e.execute-api.ap-south-1.amazonaws.com/mockapi/get-products";
+let url ="https://mock-server-01of.onrender.com/Menu";
 let page=1;
 
 let getdata=async(page)=>{
     let res = await fetch(`${url}?page=${page}`);
     let data = await res.json();
-   console.log("data :" ,data.data);
-    adddata(data.data,page);
+   console.log("data :" ,data);
+    adddata(data,page);
 
 };
 
@@ -36,21 +36,26 @@ let adddata=(data,page)=>{
         let d =document.createElement("div");
         d.setAttribute("class", "item");
 
-            let img = document.createElement("img");
-            img.src =e.image;
+            let id = document.createElement("id");
+            id.innerText=e.index;
 
-            let cat = document.createElement("p");
-            cat.innerHTML =e.category;
+            let img = document.createElement("img");
+            img.src =e.Image;
             
             let h3 = document.createElement("h3");
-            h3.innerText =e.title;
+            h3.innerText =e.Title;
 
-            let bran = document.createElement("p");
-            bran.innerText = `brand:- ${e.brand}`;
+            let desc = document.createElement("p");
+            desc.innerHTML =e.Description;
 
+            
             let p2 = document.createElement("h3");
-            p2.innerText = e.price;
+            p2.innerText = e.Price;
             p2.setAttribute("class", "price");
+
+            let ratings = document.createElement("p");
+            ratings.innerText = `Ratings:- ${e.Ratings}`;
+
 
 
             let btn = document.createElement("button");
@@ -61,7 +66,7 @@ let adddata=(data,page)=>{
                 addToCart(e);
             };
 
-        d.append(img, cat, h3, bran , p2 , btn);
+        d.append(id,img,h3,desc,p2,ratings, btn);
        
         box.append(d);
       
