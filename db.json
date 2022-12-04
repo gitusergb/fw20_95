@@ -5,5 +5,16 @@
             "status": false,
             "id": "1669720681407TASK-1"
         }
+    ],
+    "Menu":[
+        {
+            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm0RFZruaDSerPJFN3KM6Hyg2Z8R86Z0mR9g&usqp=CAU",
+            "Title":"Pani-puri",
+            "Description":"a mix of cold, hot and spicy, sweet, tangy, tart, and crunchy",
+            "Price":"30",
+            "Ratings":"10"
+        }
     ]
+
+    
 }
