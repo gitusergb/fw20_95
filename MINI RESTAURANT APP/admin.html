@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/admin.css">
+    <link rel="stylesheet" href="./styles/nav.css" />
+
+    <title>Admin Page</title>
+</head>
+<body>
+
+    <div id="navbar"></div>
+
+    <h1>Admin Panel</h1>
+    <div id="container">      <!-- Add Product Section -->
+            <div id="add_section">
+
+                <h2>Add Product</h2>
+
+                <div id="add_products">
+
+                    <input type="number" placeholder="Enter Product Id" id="product_id" required> <br>
+
+                    <input type="text" placeholder="Enter Image URL" id="product_image" required> <br>
+
+                    <input type="text" placeholder="Enter Product Name" id="product_name" required> <br>
+
+                    <input type="text" placeholder="Enter Product Description" id="product_Description" required> <br>
+                    
+                    <input type="number" placeholder="Enter Product Price" id="product_price" required> <br>
+
+                    <input type="text" placeholder="Enter Product Ratings" id="product_Ratings" required> <br>
+                    
+                    <button id="addTo_menusPage"> Add Product To Menus Page</button> <br>
+
+               
+                    
+                </div>
+
+                <!-- Delete Products -->
+                <div id="delete ">
+                </div>
+
+                <!-- Update Section -->
+                <div id="update">
+                </div>
+
+        </div>
+
+        
+        <!-- Display section -->
+        <div id="admin_product_list">
+
+            <div>
+                <h3>Menus Page </h3>
+                <div id="admin_menus"></div>
+            </div>
+
+           
+            
+        </div>
+
+    </div>
+
+    <div id="footer"></div>
+
+</body>
+</html>
+
+<script src="https://kit.fontawesome.com/24c494a6b6.js"
+     crossorigin="anonymous"></script>
+
+<script type="module" src="./src/scripts/admin.js"></script>
+

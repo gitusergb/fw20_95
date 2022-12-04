@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup_Login</title>
+    <style>
+      body{
+        background-color: snow;
+      }
+        #container {
+          display: flex;
+        }
+    
+        form {
+          margin: 20px;
+          display: grid;
+        background-color:#404040;
+        width:auto;
+        border-radius: 20px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        padding: 30px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+    
+      
+    
+       label {
+        color: white;
+        font-size: 16px;
+        margin-left: 10px;
+        margin-bottom: 6px;
+        line-height: 1.5;
+    }
+      
+      span{
+        color: white;
+      }
+      input,
+      select,
+      textarea {
+        width:500px;
+        padding: 15px;
+        border: 1px solid #ced1d6;
+        border-radius: 6px;
+        box-sizing: border-box;
+        margin: 6px 0px 5px 0px;
+        resize: vertical;
+        color:white;
+        background-color: black;
+      }
+      
+      button{
+        margin: 10px 0px 5px 50px;
+        height: 40px;
+        width:500px;
+        border: none;
+        background-color:#404040;
+        color: white;
+         font-size: 20px;
+         font-family: 'Montserrat', sans-serif;
+        border-radius: 40px;
+       
+        
+    }
+    button:hover{
+        background-color: grey;
+        color: white;
+        border:0.5px solid #ced1d6;
+    }
+      
+      h1 {
+        text-align: center;
+        font-size: 40px;
+        color: white;
+       margin-top: 60px;
+      }
+      </style>
+    
+</head>
+<body>
+        <div id="container">
+          <a id="home" href="./home.html"><h3>HOME</h3></a>
+          <div id="register-form">
+            <h1>SIGNUP</h1>
+            <form>
+              <label >Username</label>
+              <input type="text" id="username" placeholder="Username" />
+              <label >Email</label>
+              <input type="text" id="email" placeholder="Email" />
+              <label >Password</label>
+              <input type="text" id="password" placeholder="Password" />
+              <label >Mobile</label>
+              <input type="text" id="mobile" placeholder="Mobile" />
+            </form>
+            <button id="re_gister">Signup</button>
+           
+    
+        </div>
+    
+          <div id="login-form">
+            <h1>LOGIN</h1>
+            <form>
+              <label >Username</label>
+              <input type="text" id="l_username" placeholder="Username" />
+              <label>Password</label>
+              <input type="text" id="l_password" placeholder="Password" />
+            </form>
+    
+            <button id="log_in">Login</button>
+          
+          </div>
+        </div>
+      </body>
+      <script  src="./src/scripts/index.js"></script>
+     
+    </html>
+    

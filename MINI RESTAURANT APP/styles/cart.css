@@ -1,0 +1,25 @@
+
+
+#items {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    border: 0px solid blue;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #items div{
+    justify-content: center;
+   align-items: center;
+   text-align: center;
+    border: 1px solid whitesmoke;
+    gap: 10px;
+    width: 90%;
+    height: auto;
+  }
+
+
+ 
