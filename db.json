@@ -6,6 +6,23 @@
             "id": "1669720681407TASK-1"
         }
     ],
+    "login":[
+        {
+            "username":"gauri",
+            "password":"gauri12345"
+        }
+    ],
+    "register":[
+        
+        {
+            "username":"gauri",
+            "email" :"gauri123@gmail.com",
+            "password":"gauri12345",
+            "mobile" :"9992226688"
+        }
+       
+       
+    ],
     "Menu":[
         {
             "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm0RFZruaDSerPJFN3KM6Hyg2Z8R86Z0mR9g&usqp=CAU",
