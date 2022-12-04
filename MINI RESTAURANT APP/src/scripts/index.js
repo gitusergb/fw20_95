@@ -23,7 +23,7 @@ console.log("gauri");
             let actual_data = JSON.stringify(this);
             try{
            // let res = await fetch (`https://masai-api-mocker.herokuapp.com/auth/register`,{
-            let res = await fetch (``,{
+            let res = await fetch (`https://mock-server-01of.onrender.com/login`,{
             method: 'POST',
             body: actual_data,
             headers : {
@@ -53,7 +53,7 @@ console.log("gauri");
         this.password=password;
         let login_data = JSON.stringify(this);
         try{
-            let res = await fetch(`https://masai-api-mocker.herokuapp.com/auth/login`,{
+            let res = await fetch(`https://mock-server-01of.onrender.com/login`,{
             method: 'POST',
             body:login_data,
             headers: {
